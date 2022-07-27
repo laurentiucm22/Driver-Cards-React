@@ -1,0 +1,9 @@
+.card_bottom {
+  background-color: lightblue;
+}
+
+.card_bg-pattern {
+  background-image: url("./white-stripe.png");
+  background-repeat: repeat;
+  background-position: top left;
+}

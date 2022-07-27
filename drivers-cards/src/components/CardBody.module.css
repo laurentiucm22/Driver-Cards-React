@@ -1,3 +1,57 @@
 .driver_name-country-team {
-  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.driver_name-container {
+  display: flex;
+}
+
+.driver_name-span {
+  width: 6px;
+  min-height: 50px;
+  background-color: #3671c6;
+}
+
+.driver_name {
+  padding: 0.5rem;
+}
+
+.driver_first-name {
+  font-family: var(--ff-f1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: var(--clr-driver_name);
+  text-transform: uppercase;
+}
+
+.driver_last-name {
+  font-size: 22px;
+  font-family: var(--ff-f1_Bold);
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--clr-driver_name);
+}
+
+.driver_country {
+  padding-right: 1rem;
+}
+.driver_flag {
+  font-size: 22px;
+  font-family: var(--ff-f1_Bold);
+}
+
+.driver_team-container {
+  padding-top: 1.25rem;
+}
+
+.driver_team {
+  font-family: var(--ff-f1);
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 400;
+  color: var(--clr-gray);
 }

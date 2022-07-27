@@ -1,6 +1,7 @@
 import React from "react";
 import mockData from "../constants/mockData";
 import CardBody from "./CardBody";
+import CardBottom from "./CardBottom";
 import CardTop from "./CardTop";
 import classes from "./DriverCard.module.css";
 
@@ -12,7 +13,11 @@ const DriverCard = () => {
   return (
     <React.Fragment>
       {sortData.map(
-        ({ number, points, firstName, lastName, country, team }, index) => {
+        (
+          // prettier-ignore
+          { number, points, firstName, lastName, country, team, hex, image},
+          index
+        ) => {
           return (
             <div key={number} className={classes.container}>
               <div className={classes.card}>
@@ -22,7 +27,9 @@ const DriverCard = () => {
                   lastName={lastName}
                   country={country}
                   team={team}
+                  hex={hex}
                 />
+                <CardBottom image={image} />
               </div>
             </div>
           );
