@@ -6,10 +6,13 @@
   margin-top: 30px;
   transition: border 200ms ease-in-out;
   min-width: 400px;
-  width: 100%;
+  width: 50%;
   cursor: pointer;
+  margin-right: 10px;
 }
-
+.card:last-of-type {
+  justify-content: flex-start;
+}
 .card:hover {
   border-top: 3px solid #3671c6;
   border-right: 3px solid #3671c6;

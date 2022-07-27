@@ -1,0 +1,16 @@
+.f1_title-container {
+  border-top: 10px solid;
+  border-right: 10px solid;
+  border-color: #131313;
+  border-top-right-radius: 25px;
+  padding: 20px 20px 0 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.f1_title {
+  font-family: var(--ff-f1_Bold);
+  font-size: 62px;
+  line-height: 62px;
+}

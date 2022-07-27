@@ -1,10 +1,14 @@
 import "./App.css";
-import Drivers from "./pages/Drivers";
+import DriversPage from "./pages/DriversPage";
+import NavbarPage from "./pages/NavbarPage";
+import TitlePage from "./pages/TitlePage";
 
 function App() {
   return (
     <div className="App">
-      <Drivers />
+      <NavbarPage />
+      <TitlePage />
+      <DriversPage />
     </div>
   );
 }

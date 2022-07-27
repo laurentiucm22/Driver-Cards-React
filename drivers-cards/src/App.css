@@ -64,6 +64,7 @@ table {
 
 :root {
   /* Text and background color */
+  --clr-navbg: #e10600;
   --clr-dark: #000000;
   --clr-white: #fff;
   --clr-gray: #949498;
