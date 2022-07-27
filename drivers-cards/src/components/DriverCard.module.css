@@ -1,0 +1,10 @@
+.card {
+  border-top: 3px solid var(--clr-dark);
+  border-right: 3px solid var(--clr-dark);
+  border-top-right-radius: 20px;
+  padding-right: 15px;
+  margin-top: 30px;
+  transition: border 200ms ease-in-out;
+  min-width: 400px;
+  width: 100%;
+}
