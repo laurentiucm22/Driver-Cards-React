@@ -7,4 +7,21 @@
   transition: border 200ms ease-in-out;
   min-width: 400px;
   width: 100%;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-top: 3px solid #3671c6;
+  border-right: 3px solid #3671c6;
+  border-top-right-radius: 20px;
+  padding-top: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: border 200ms ease-in-out;
+}
+
+@media (min-width: 1500px) {
+  .top3 {
+    width: 500px;
+  }
 }

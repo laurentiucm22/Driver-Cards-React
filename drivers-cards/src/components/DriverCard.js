@@ -20,8 +20,8 @@ const DriverCard = () => {
         ) => {
           return (
             <div key={number} className={classes.container}>
-              <div className={classes.card}>
-                <CardTop place={index} points={points} />
+              <div className={`${index <= 2 && classes.top3} ${classes.card}`}>
+                <CardTop place={index} points={points} hex={hex} />
                 <CardBody
                   firstName={firstName}
                   lastName={lastName}
@@ -29,7 +29,7 @@ const DriverCard = () => {
                   team={team}
                   hex={hex}
                 />
-                <CardBottom image={image} />
+                <CardBottom image={image} number={number} hex={hex} />
               </div>
             </div>
           );

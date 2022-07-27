@@ -1,9 +1,36 @@
 .card_bottom {
-  background-color: lightblue;
+  margin-top: 20px;
 }
 
 .card_bg-pattern {
   background-image: url("./white-stripe.png");
   background-repeat: repeat;
   background-position: top left;
+  position: relative;
+}
+
+.driver_img-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.driver_img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  transform: scale(1.2) translateY(-8%);
+}
+
+.driver_number {
+  position: absolute;
+  font-size: 60px;
+  font-family: var(--ff-f1_Bold);
+  background-color: var(--clr-white);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
 }

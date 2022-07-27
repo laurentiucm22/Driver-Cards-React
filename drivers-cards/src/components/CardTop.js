@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "../UI/Button";
 import classes from "./CardTop.module.css";
 
-const CardTop = ({ place, points }) => {
+const CardTop = ({ place, points, hex }) => {
   const [incrementPoints, setIncrementPoints] = useState(points);
 
   const addPoints = () => {
