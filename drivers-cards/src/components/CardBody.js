@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./CardBody.module.css";
+import Flag from "react-world-flags";
 
 const CardBody = ({ firstName, lastName, country, team, hex }) => {
   return (
@@ -16,7 +17,9 @@ const CardBody = ({ firstName, lastName, country, team, hex }) => {
           </div>
         </div>
         <div className={`${classes["driver_country"]}`}>
-          <p className={`${classes["driver_flag"]}`}>{country}</p>
+          <div className={`${classes["driver_flag"]}`}>
+            <Flag height="35" code={country} />
+          </div>
         </div>
       </div>
       <div className={`${classes["driver_team-container"]}`}>

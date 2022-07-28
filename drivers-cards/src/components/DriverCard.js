@@ -15,11 +15,15 @@ const DriverCard = () => {
   };
 
   const handleIncrement = (number) => {
+    // creating a new array
     let newArr = [...mockData];
-    let test = newArr.find((el) => {
+    // Appling the find function to the new array that returns a reference of the old array
+    // If we used the map function, the map function returns the value of an properties in the array
+    let findDriver = newArr.find((el) => {
       return el.number === number;
     });
-    test.points = test.points + 1;
+    findDriver.points = findDriver.points + 1;
+    // The state will be updated with the new array even do I called the newArr, it will pass in the find function and work like that
     setDataSort(newArr);
   };
 

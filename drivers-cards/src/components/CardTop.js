@@ -2,12 +2,7 @@ import React from "react";
 import Button from "../UI/Button";
 import classes from "./CardTop.module.css";
 
-const CardTop = ({ number, place, points, data, onIncrementPoints }) => {
-  // const handleIncrementPoints = () => {
-  //   const incrementPoints = data.map(({ points }) => (points += 1));
-  //   onPointsChange(incrementPoints);
-  // };
-
+const CardTop = ({ number, place, points, onIncrementPoints }) => {
   return (
     <div className={`${classes["card_top"]}`}>
       <p className={`${classes["driver_place"]}`}>{place + 1}</p>

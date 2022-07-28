@@ -1,7 +1,3 @@
-.container::last-of-type {
-  justify-content: flex-start;
-}
-
 .card {
   border-top: 3px solid var(--clr-dark);
   border-right: 3px solid var(--clr-dark);
@@ -10,7 +6,7 @@
   margin-top: 30px;
   transition: border 200ms ease-in-out;
   min-width: 300px;
-  width: 100%;
+  width: 70%;
   cursor: pointer;
   margin-right: 10px;
 }
