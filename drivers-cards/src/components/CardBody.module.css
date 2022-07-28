@@ -47,6 +47,7 @@
   font-family: var(--ff-f1_Bold);
   border-radius: 5px;
   overflow: hidden;
+  border: 1px solid rgba(128, 128, 128, 0.329);
 }
 
 .driver_team-container {
