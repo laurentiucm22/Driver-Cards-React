@@ -8,7 +8,7 @@ const CardBody = ({ firstName, lastName, country, team, hex }) => {
         <div className={`${classes["driver_name-container"]}`}>
           <span
             className={`${classes["driver_name-span"]}`}
-            style={{ "background-color": `${hex}` }}
+            style={{ backgroundColor: `${hex}` }}
           ></span>
           <div className={`${classes["driver_name"]}`}>
             <h3 className={`${classes["driver_first-name"]}`}>{firstName}</h3>

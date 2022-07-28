@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "../UI/Button";
 import classes from "./CardTop.module.css";
 
-const CardTop = ({ place, points, hex }) => {
-  const [incrementPoints, setIncrementPoints] = useState(points);
-
-  const addPoints = () => {
-    setIncrementPoints(incrementPoints + 1);
-  };
+const CardTop = ({ number, place, points, data, onIncrementPoints }) => {
+  // const handleIncrementPoints = () => {
+  //   const incrementPoints = data.map(({ points }) => (points += 1));
+  //   onPointsChange(incrementPoints);
+  // };
 
   return (
     <div className={`${classes["card_top"]}`}>
       <p className={`${classes["driver_place"]}`}>{place + 1}</p>
       <div className={`${classes["points_container"]}`}>
         <div>
-          <p className={`${classes["driver_points"]}`}>{incrementPoints}</p>
+          <p className={`${classes["driver_points"]}`}>{points}</p>
           <p className={`${classes["driver_points-text"]}`}>PTS</p>
         </div>
-        <Button className={`${classes["points_btn"]}`} onClick={addPoints}>
+        <Button
+          className={`${classes["points_btn"]}`}
+          onClick={() => onIncrementPoints(number)}
+        >
           Add Point
         </Button>
       </div>
