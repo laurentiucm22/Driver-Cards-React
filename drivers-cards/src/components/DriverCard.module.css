@@ -27,3 +27,9 @@
     width: 400px;
   }
 }
+
+@media (max-width: 1100px) {
+  .card {
+    min-width: 500px;
+  }
+}

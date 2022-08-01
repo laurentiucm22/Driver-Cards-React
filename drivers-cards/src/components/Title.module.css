@@ -14,3 +14,13 @@
   font-size: 62px;
   line-height: 62px;
 }
+
+@media (max-width: 1100px) {
+  .f1_title-container {
+    width: 90%;
+  }
+  .f1_title {
+    font-size: 40px;
+    white-space: nowrap;
+  }
+}

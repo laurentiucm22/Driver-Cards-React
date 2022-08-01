@@ -1,3 +1,9 @@
 .title_page {
   margin-top: 130px;
 }
+
+@media (max-width: 1100px) {
+  .title_page {
+    width: 100%;
+  }
+}
